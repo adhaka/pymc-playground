@@ -1,3 +1,5 @@
+# bayesian for hackers -chapter 1 exercise .... 
+
 import numpy as np 
 import scipy.stats as stats
 import matplotlib.pyplot as plt
@@ -11,6 +13,8 @@ print n_count
 avg_count = np.mean(count_data, axis=0)
 
 alpha = 1. / avg_count
+
+#  random variable with exponential distribution  .... 
 lambda_1 = pm.Exponential("lambda_1", alpha)
 lambda_2 = pm.Exponential("lambda_2", alpha)
 
